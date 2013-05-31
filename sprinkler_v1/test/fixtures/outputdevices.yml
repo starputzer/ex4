@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  devicename: 
+  status: false
+
+two:
+  devicename: 
+  status: false
