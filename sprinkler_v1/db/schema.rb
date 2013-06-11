@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130531132309) do
+ActiveRecord::Schema.define(version: 20130611181417) do
 
   create_table "outputdevices", force: true do |t|
-    t.string   "devicename"
-    t.boolean  "status"
+    t.string   "name"
+    t.boolean  "statuso"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
