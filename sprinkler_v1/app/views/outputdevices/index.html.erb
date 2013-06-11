@@ -1,0 +1,29 @@
+<h1>Listing outputdevices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Statuso</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @outputdevices.each do |outputdevice| %>
+      <tr>
+        <td><%= outputdevice.name %></td>
+        <td><%= outputdevice.statuso %></td>
+        <td><%= link_to 'Show', outputdevice %></td>
+        <td><%= link_to 'Edit', edit_outputdevice_path(outputdevice) %></td>
+        <td><%= link_to 'Destroy', outputdevice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Outputdevice', new_outputdevice_path %>
