@@ -2,45 +2,45 @@ require "test_helper"
 
 class OutputdevicesControllerTest < ActionController::TestCase
 
-  before do
+  setup do
     @outputdevice = outputdevices(:one)
   end
 
-  def test_index
+  test "should get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:outputdevices)
   end
 
-  def test_new
+  test "should get new" do
     get :new
     assert_response :success
   end
 
-  def test_create
+  test "should create outputdevice" do
     assert_difference('Outputdevice.count') do
-      post :create, outputdevice: {  }
+      post :create, outputdevice: { name: @outputdevice.name }
     end
 
     assert_redirected_to outputdevice_path(assigns(:outputdevice))
   end
 
-  def test_show
+  test "should show outputdevice" do
     get :show, id: @outputdevice
     assert_response :success
   end
 
-  def test_edit
+  test "shoud get edit" do
     get :edit, id: @outputdevice
     assert_response :success
   end
 
-  def test_update
-    put :update, id: @outputdevice, outputdevice: {  }
+  test "should update item" do 
+    put :update, id: @outputdevice, outputdevice: { name:@outputdevice.name }
     assert_redirected_to outputdevice_path(assigns(:outputdevice))
   end
 
-  def test_destroy
+  test "should destroy item" do
     assert_difference('Outputdevice.count', -1) do
       delete :destroy, id: @outputdevice
     end
