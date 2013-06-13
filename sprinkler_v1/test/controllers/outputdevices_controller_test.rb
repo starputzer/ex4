@@ -35,16 +35,21 @@ class OutputdevicesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update item" do 
+  test "should update outputdevice" do 
     put :update, id: @outputdevice, outputdevice: { name:@outputdevice.name }
     assert_redirected_to outputdevice_path(assigns(:outputdevice))
   end
 
-  test "should destroy item" do
+  test "should destroy outputdevice" do
     assert_difference('Outputdevice.count', -1) do
       delete :destroy, id: @outputdevice
     end
-
+    
     assert_redirected_to outputdevices_path
+  end
+
+  test "should toogle outputdevice" do
+    get :toogle, id: @outputdevice
+    assert_response 302
   end
 end

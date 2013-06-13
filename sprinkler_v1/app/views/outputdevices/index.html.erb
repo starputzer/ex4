@@ -19,6 +19,7 @@
         <td><%= link_to 'Show', outputdevice %></td>
         <td><%= link_to 'Edit', edit_outputdevice_path(outputdevice) %></td>
         <td><%= link_to 'Destroy', outputdevice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'toogle NEW', toogle_path(outputdevice) %></td>
       </tr>
     <% end %>
   </tbody>

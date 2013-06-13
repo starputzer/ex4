@@ -1,5 +1,17 @@
 class OutputdevicesController < ApplicationController
-  before_action :set_outputdevice, only: [:show, :edit, :update, :destroy]
+  before_action :set_outputdevice, only: [:toogle, :show, :edit, :update, :destroy]
+
+  #TOGGLE /outputdevice/1/toogle
+  def toogle
+      @outputdevice = Outputdevice.find(request[:id])
+      @outputdevice.toogle
+      @outputdevice.save
+    respond_to do |format|
+    format.html { redirect_to outputdevices_url, notice: "Plus one for '#{@outputdevice.name}'."}
+    format.json { render json: @outputdevice }
+    end
+  end
+
 
   # GET /outputdevices
   # GET /outputdevices.json
