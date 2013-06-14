@@ -1,4 +1,6 @@
 SprinklerV1::Application.routes.draw do
+  resources :schedulers
+
   resources :outputdevices
 
   # The priority is based upon order of creation: first created -> highest priority.
