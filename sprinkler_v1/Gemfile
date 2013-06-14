@@ -1,3 +1,5 @@
+ruby '2.0.0' # for the heroku stuff 
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -5,6 +7,8 @@ gem 'rails', '4.0.0.rc1'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -33,8 +37,17 @@ group :doc do
 end
 
 group :test, :development do
-  gem 'minitest-rails'
+  gem 'rake' # for travis, see http://about.travis-ci.org/docs/user/languages/ruby/
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+
+  gem 'minitest-spec-rails' # adds the describe / it test dsl as used in second & third example
+  gem 'capybara_minitest_spec' # adds the capybara expectations as used in the third example
+end
+
+group :production do
+  gem 'pg' #no sqlite3 on heroku only pg-stuff
 end
 
 # Use ActiveModel has_secure_password

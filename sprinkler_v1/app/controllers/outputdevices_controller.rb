@@ -7,7 +7,7 @@ class OutputdevicesController < ApplicationController
       @outputdevice.toogle
       @outputdevice.save
     respond_to do |format|
-    format.html { redirect_to outputdevices_url, notice: "Plus one for '#{@outputdevice.name}'."}
+    format.html { redirect_to outputdevices_url, notice: "toogle '#{@outputdevice.name}'."}
     format.json { render json: @outputdevice }
     end
   end
