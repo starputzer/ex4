@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  systemode: false
+  systemtime: 2013-06-14 15:37:03
+  maxoutputdevice: 
+
+two:
+  systemode: false
+  systemtime: 2013-06-14 15:37:03
+  maxoutputdevice: 

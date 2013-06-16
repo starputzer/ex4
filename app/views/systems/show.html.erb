@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Systemode:</strong>
+  <%= @system.systemode %>
+</p>
+
+<p>
+  <strong>Systemtime:</strong>
+  <%= @system.systemtime %>
+</p>
+
+<p>
+  <strong>Maxoutputdevice:</strong>
+  <%= @system.maxoutputdevice %>
+</p>
+
+<%= link_to 'Edit', edit_system_path(@system) %> |
+<%= link_to 'Back', systems_path %>
