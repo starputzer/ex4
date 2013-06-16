@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @scheduler.starttime %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @scheduler.endtime %>
+</p>
+
+<p>
+  <strong>Outputdeviceid:</strong>
+  <%= @scheduler.outputdeviceid %>
+</p>
+
+<%= link_to 'Edit', edit_scheduler_path(@scheduler) %> |
+<%= link_to 'Back', schedulers_path %>
