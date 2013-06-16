@@ -38,12 +38,12 @@ end
 
 group :test, :development do
   gem 'rake' # for travis, see http://about.travis-ci.org/docs/user/languages/ruby/
-  gem 'capybara'
+  #gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
 
   gem 'minitest-spec-rails' # adds the describe / it test dsl as used in second & third example
-  gem 'capybara_minitest_spec' # adds the capybara expectations as used in the third example
+  #gem 'capybara_minitest_spec' # adds the capybara expectations as used in the third example
 end
 
 group :production do
