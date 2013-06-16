@@ -1,5 +1,5 @@
 SprinklerV1::Application.routes.draw do
-  resources :schedulers
+  resources :systems
 
   resources :outputdevices
 
