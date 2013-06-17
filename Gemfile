@@ -38,6 +38,7 @@ end
 
 group :test, :development do
   gem 'rake' # for travis, see http://about.travis-ci.org/docs/user/languages/ruby/
+  gem "minitest-rails"
   #gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
