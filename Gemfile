@@ -1,4 +1,5 @@
-ruby '2.0.0' # for the heroku stuff 
+## no ruby 2.0.0 at martins basement
+##ruby '2.0.0' # for the heroku stuff 
 
 source 'https://rubygems.org'
 
