@@ -1,0 +1,2 @@
+class CoresystemController < ApplicationController
+end
